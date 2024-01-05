@@ -1,0 +1,174 @@
+.chat-screen{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.connections{
+    width: 30%;
+    padding-right: 10px;
+}
+
+.connection-heading{
+    font-family: "Paytone One", Helvetica;
+    font-weight: 800;
+    color: #011627;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info{
+    height: 70px;
+    background-image: url(./img/rectangle-1132.svg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    padding: 0 10px;
+}
+
+.chat-icon img{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.info img{
+    width: 60px;
+    height: 52px;
+}
+
+.info div .name{
+    font-family: "Red Hat Display", Helvetica;
+    font-weight: 500;
+    color: #000d07;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+
+    margin:0;
+    white-space: nowrap;    
+}
+
+
+
+.info div .username{
+    margin:0;
+    margin-top: 5px;
+    font-family: "Readex Pro", Helvetica;
+    font-weight: 400;
+    color: #797c7a;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 12px;
+    white-space: nowrap;
+}
+
+
+.todo-button{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.todo-button .button {
+    display: block;
+    border-radius: 5px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px;
+    width: 90px;
+    height: 22px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3px;
+    
+  }
+  
+  .todo-button .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .todo-button .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .todo-button .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .todo-button .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.chat-screen-area{
+    width: 70%;
+    height: 95vh;
+    display:flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-left: 3px solid #280b2d;
+}
+
+.chat-heading{
+    display: flex;
+    height: 10%;
+}
+
+.chat-heading img{
+    width: 10%;
+    height: 66px;
+}
+
+.chat-heading p{
+    font-family: "Alata", Helvetica;
+    font-weight: 560;
+    color: #000d07;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 16px;
+    width: 90%;
+    margin: auto;
+
+}
+
+.chat-area{
+    height: 80%;
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+.input-area{
+    height: 7%;
+    display: flex;
+}
+
+.input-area input{
+    width: 90%;
+}
+
+.input-area button{
+    width: 10%;
+    background-color: #280b2d;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}

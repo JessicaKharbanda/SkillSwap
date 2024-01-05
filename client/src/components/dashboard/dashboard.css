@@ -1,0 +1,745 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:400,500,700,600");
+/* * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+} */
+/* a blue color as a generic focus style */
+/* button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+} */
+
+
+
+
+.skill-dashboard {
+    background-color: #f9f8ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .skill-dashboard .div {
+    background-color: #f9f8ff;
+    overflow: hidden;
+    width: 1440px;
+    height: 565px;
+    position: relative;
+    left:0;
+    margin-top: 59px;
+  }
+  
+  .skill-dashboard .overlap {
+    position: absolute;
+    width: 422px;
+    height: 1026px;
+    top: 5px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #dddfe3;
+  }
+  
+  .skill-dashboard .frame {
+    display: flex;
+    flex-direction: row;
+    width: 190px;
+    align-items: flex-start;
+    gap: 100px;
+    position: absolute;
+    top: 518px;
+    left: 63px;
+  }
+  
+  .skill-dashboard .frame-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+    cursor:pointer;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .skill-dashboard .img {
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .skill-dashboard .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #0a0f1f;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .frame-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    cursor: pointer;
+  }
+  
+  .skill-dashboard .frame-4 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .skill-dashboard .frame-5 {
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    height: 75px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 16px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid;
+    border-color: #e7e7e8;
+  }
+  
+  .skill-dashboard .home {
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: 1.5px;
+    height: 31px;
+    left: -12px;
+  }
+  
+  .skill-dashboard .text-wrapper-2 {
+    position: relative;
+    width: 116px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #0a0f1f;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  
+  .skill-dashboard .frame-6 {
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    height: 75px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 16px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid;
+    border-color: #e7e7e8;
+  }
+  
+  .skill-dashboard .text-wrapper-3 {
+    position: relative;
+    width: 116px;
+    margin-bottom: -6.5px;
+    margin-right: -3px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #0a0f1f;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .group {
+    position: absolute;
+    width: 41px;
+    height: 15px;
+    top: 13px;
+    left: 93px;
+  }
+  
+  .skill-dashboard .dashboard-rectangle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 4px;
+    left: 31px;
+    background-color: #e87c7c;
+    border-radius: 5px;
+  }
+  
+  .skill-dashboard .text-wrapper-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 600;
+    color: #00000066;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .frame-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 6px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -10.5px;
+    background-color: #41edba1a;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .skill-dashboard .image-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .skill-dashboard .image {
+    width: 21px;
+    height: 24px;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .skill-dashboard .text-wrapper-5 {
+    position: relative;
+    width: 116px;
+    margin-bottom: -9.5px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #0a0f1f;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .frame-7 {
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    height: 78px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 16px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid;
+    border-color: #e7e7e8;
+  }
+  
+  .skill-dashboard .img-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -1px;
+  }
+  
+  .skill-dashboard .image-2 {
+    width: 26px;
+    height: 20px;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .skill-dashboard .text-wrapper-6 {
+    position: relative;
+    width: 116px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #0a0f1f;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .group-2 {
+    position: absolute;
+    width: 41px;
+    height: 15px;
+    top: 103px;
+    left: 93px;
+  }
+  
+  .skill-dashboard .div-wrapper {
+    position: absolute;
+    width: 371px;
+    height: 217px;
+    top: 367px;
+    left: 16px;
+    /* overflow: hidden; */
+  }
+  
+  .skill-dashboard .frame-8 {
+    /* display: flex;
+    flex-direction: column;
+    width: 355px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 38px 32px;
+    position: relative;
+    top: -40px;
+    left: 21px;
+    background-color: #0a0f1f;
+    border-radius: 24px; */
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 38px 32px;
+    position: relative;
+    top: -41px;
+    left: 8px;
+    background-color: #0a0f1f;
+    border-radius: 24px;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+  
+  .skill-dashboard .frame-9 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .skill-dashboard .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .frame-10 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 13px 26px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-dashboard .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #0a0f1f;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .skill-dashboard .element-data-management {
+    position: absolute;
+    width: 194px;
+    height: 215px;
+    top: -55px;
+    left: 170px;
+    object-fit: cover;
+  }
+  
+  .skill-dashboard .overlap-group-wrapper {
+    position: absolute;
+    width: 952px;
+    height: 208px;
+    top: 37px;
+    left: 455px;
+  }
+  
+  .skill-dashboard .overlap-group {
+    position: relative;
+    height: 251px;
+  }
+  
+  .skill-dashboard .frame-11 {
+    position: absolute;
+    width: 922px;
+    height: 192px;
+    top: 0;
+    left: -27px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #dddee3;
+  }
+  
+  .skill-dashboard .grad {
+    position: absolute;
+    width: 419px;
+    height: 192px;
+    top: 0;
+    left: 533px;
+    object-fit: cover;
+  }
+  
+  .skill-dashboard .text-wrapper-9 {
+    position: absolute;
+    top: 31px;
+    left: 34px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #0a0f1f;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .p {
+    position: absolute;
+    width: 475px;
+    top: 99px;
+    left: 34px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 400;
+    color: #676c7e;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .element-object-cloud {
+    position: absolute;
+    width: 290px;
+    height: 206px;
+    top: 45px;
+    left: 629px;
+    object-fit: cover;
+  }
+  
+  .skill-dashboard .frame-12 {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 288px;
+    left: 463px;
+  }
+  
+  .skill-dashboard .img-2 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .skill-dashboard .text-wrapper-10 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .frame-13 {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 615px;
+    left: 458px;
+  }
+  
+  .skill-dashboard .frame-14 {
+    display: flex;
+    width: 342px;
+    height: 234px;
+    align-items: center;
+    gap: 21px;
+    position: absolute;
+    top: 314px;
+    left: 455px;
+    transform: scale(0.85);
+    cursor: pointer;
+  }
+  
+  .skill-dashboard .frame-15 {
+    position: relative;
+    width: 344px;
+    height: 240px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-right: -2px;
+    background-color: #d9b2e8;
+    border-radius: 24px;
+  }
+  
+  .skill-dashboard .overlap-group-2 {
+    position: relative;
+    width: 340px;
+    height: 236px;
+    top: 2px;
+    left: 2px;
+    background-image: url(./img/subtract.svg);
+    background-size: 100% 100%;
+  }
+  
+  .skill-dashboard .frame-16 {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 9px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  
+  .skill-dashboard .text-wrapper-11 {
+    position: relative;
+    width: 113px;
+    margin-top: -1px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .text-wrapper-12 {
+    position: absolute;
+    height: 18px;
+    top: 203px;
+    left: 259px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #062d47;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .text-wrapper-13 {
+    position: absolute;
+    top: 19px;
+    left: 231px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 400;
+    color: #aab4ba;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .overlap-2 {
+    position: absolute;
+    width: 139px;
+    height: 139px;
+    top: 58px;
+    left: 168px;
+  }
+  
+  .skill-dashboard .vector {
+    position: absolute;
+    width: 111px;
+    height: 49px;
+    top: 90px;
+    left: 18px;
+  }
+  
+  .skill-dashboard .object {
+    position: absolute;
+    width: 139px;
+    height: 113px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .skill-dashboard .text-wrapper-14 {
+    position: absolute;
+    top: 199px;
+    left: 16px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #aab4ba;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .text-wrapper-15 {
+    position: absolute;
+    top: 74px;
+    left: 18px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #aab4ba;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .frame-17 {
+    display: inline-flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 100px;
+    left: 18px;
+  }
+  
+  .skill-dashboard .rectangle-2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  .skill-dashboard .rectangle-3 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: -16px;
+    object-fit: cover;
+  }
+  
+  .skill-dashboard .frame-18 {
+    position: relative;
+    width: 39px;
+    height: 40px;
+    margin-left: -16px;
+    background-color: #d196ed;
+    border-radius: 31px;
+  }
+  
+  .skill-dashboard .text-wrapper-16 {
+    position: absolute;
+    height: 18px;
+    top: 10px;
+    left: 11px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .overlap-3 {
+    position: absolute;
+    width: 174px;
+    height: 156px;
+    top: 664px;
+    left: 461px;
+    background-color: #f5e8fa;
+    border-radius: 20px;
+  }
+  
+  .skill-dashboard .paper {
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    top: 30px;
+    left: 72px;
+  }
+  
+  .skill-dashboard .text-wrapper-17 {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .skill-dashboard .group-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    position: absolute;
+    top: 110px;
+    left: 9px;
+    background-color: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  
+  .skill-dashboard .rectangle-4 {
+    width: 57px;
+    height: 5px;
+    background-color: #973ec0;
+    border-radius: 3px;
+  }
+  
+  .ishita{
+    background-color: red;
+    cursor: pointer;
+    position: relative;
+    left: 990px;
+  }
+
+
+  .navbar1 {
+    position: absolute;
+    top: 35px;
+    left: 73px;
+    width: 1320px;
+    height: 55px;
+    color: black;
+    z-index: 2;
+}
+/* .navbar1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 55px;
+  color: black;
+  z-index: 2;
+  background-color: green;
+} */

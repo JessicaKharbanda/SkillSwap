@@ -1,0 +1,261 @@
+html, body{
+    min-height: 100vh;
+}
+.todo-screen{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    min-height: 100vh;
+}
+
+
+.connections{
+
+    width: 30%;
+    padding-right: 10px;
+}
+
+.make-todo{
+    width: 70%;
+    padding-left: 20px;
+    min-height: 100vh;
+    border-left: 3px solid purple;
+    display: flex;
+    flex-direction: column;
+}
+.make-todo-1{
+    width: 80%;
+}
+
+.make-todo-2{
+    width: 20%;
+    display: flex;
+    margin-top: 100px;
+    padding-left: 40px;
+}
+
+.make-todo-2 img{
+
+    width: 247px;
+    height: 242px;
+}
+
+.connection-heading{
+    font-family: "Paytone One", Helvetica;
+    font-weight: 400;
+    color: #011627;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.info{
+    height: 70px;
+    background-image: url(./img/connection-card.svg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info img{
+    width: 60px;
+    height: 52px;
+}
+
+.info div .name{
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+    
+}
+
+.delete-btn{
+    background: white;
+    border: none;
+}
+
+.info div .username{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.todo-button{
+    display: flex;
+    flex-direction: column;
+}
+
+.make-todo h3{
+    font-family: "Paytone One", Helvetica;
+    font-weight: 400;
+    color: #011627;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    /* margin-top: 40px; */
+}
+
+.make-todo h1{
+    text-align: center;
+    font-family: "Lalezar", Helvetica;
+    font-weight: 400;
+    color: #581d62;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.todo-button .button {
+    display: block;
+    border-radius: 5px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px;
+    width: 90px;
+    height: 22px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3px;
+    
+}
+  
+.todo-button .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.todo-button .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.todo-button .button:hover span {
+    padding-right: 25px;
+}
+  
+.todo-button .button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+.tasks{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.task{
+    width: 60%;
+}
+
+.task-1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.task-title, .task-date{
+    font-family: "Inter", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 17.7px;
+}
+
+.task-desc{
+    background-color: #f8fbec;
+    border-radius: 10px;
+    height: 80px;
+    padding: 10px;
+    width: 160%;
+}
+
+.task-priority{
+    font-family: "Inter", Helvetica;
+    font-weight: 800;
+    color: #5e2867;
+    font-size: 11.8px;
+    letter-spacing: 0;
+    line-height: 17.7px;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+
+
+
+.task input{
+    width: 24px;
+    height: 24px;
+}
+
+
+.score-div{
+    position: fixed;
+    bottom: 30px;
+    width: 150px;
+    float: right;
+    right: 10px;
+}
+
+.score{
+    width: 71px;
+    height: 70px;
+    border-radius: 35.5px/35px;
+    box-shadow: 0px 4px 4px #00000040;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 54.17%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+
+}
+
+.score p{
+    font-family: "Inter", Helvetica;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 17.7px;
+    white-space: nowrap;
+}
+
+
+.score-div .your-score{
+    font-family: "Inter", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 17.7px;
+    white-space: nowrap;
+}

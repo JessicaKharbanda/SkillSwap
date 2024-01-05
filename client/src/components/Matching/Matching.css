@@ -1,0 +1,669 @@
+.card {
+  border-radius: 21px;
+  box-shadow: 0px 4px 9.9px 1px #00000070;
+  background: linear-gradient(
+    180deg,
+    rgb(240.11, 240.11, 240.11) 25.91%,
+    rgb(209.74, 209.74, 209.74) 100%
+  );
+  padding: 11px 24px;
+  padding-top: 0;
+}
+
+.card-container {
+  padding: 0 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-heading {
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: #121212;
+  font-size: 35px;
+  letter-spacing: -0.5px;
+  line-height: 72px;
+  white-space: nowrap;
+}
+.small-headings,
+.lower-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-heading-1 {
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.small-heading-2 {
+  opacity: 0.7;
+  font-family: "Poppins", Helvetica;
+  font-weight: 700;
+  color: #21383e;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.card-text {
+  opacity: 0.7;
+  margin: 20px auto;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: #21383e;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+}
+
+.match-profile {
+  transform: rotate(-0.03deg);
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  text-decoration: underline;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.match-btn {
+  border-radius: 7px;
+  background: linear-gradient(
+    180deg,
+    rgb(158, 103, 166) 19.97%,
+    rgb(79, 37, 85) 100%
+  );
+  font-family: "Poppins", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  white-space: nowrap;
+  border: none;
+  padding: 5px 15px;
+}
+.match-btn:hover{
+  color:purple;
+  background:white;
+}
+.skillheading {
+  color: #5b3561;
+  letter-spacing: -0.5px;
+  line-height: 4.5rem;
+  font-weight: 600;
+}
+.matchheading {
+  letter-spacing: -0.5px;
+  line-height: 4.5rem;
+  font-weight: 600;
+  font-size: 31px;
+  text-align: center;
+  display: block;
+  margin-top: 69px;
+}
+
+.space {
+  height: 100px;
+}
+
+/* view profile */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,700,600|JetBrains+Mono:400|Judson:700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Abhaya Libre Medium-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/612cee6e7d4dd4a7d49e33de/fonts/abhayalibre-extrabold.ttf")
+    format("truetype");
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  gap: 117px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  overflow-y: hidden;
+}
+
+.landing .ipad-mini {
+  position: relative;
+  width: 342px;
+  height: 461px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 7px 7px 4px #00000040;
+}
+
+.landing .overlap {
+  position: relative;
+  width: 886px;
+  height: 811px;
+  top: -350px;
+  left: -147px;
+}
+
+.landing .profilebanner {
+  position: absolute;
+  width: 841px;
+  height: 375px;
+  top: 59px;
+  left: 23px;
+  transform: rotate(8.26deg);
+  box-shadow: 0px 2px 15.5px 1px #00000073;
+  background: linear-gradient(
+    180deg,
+    rgb(179.79, 130.21, 186.87) 0%,
+    rgb(135.22, 65.8, 145.14) 100%
+  );
+}
+
+.landing .arrow-left {
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  top: 361px;
+  left: 155px;
+  z-index: 2;
+}
+
+.landing .profilebg {
+  position: absolute;
+  width: 198px;
+  height: 117px;
+  top: 413px;
+  left: 219px;
+  background-color: #fffbfb;
+  border-radius: 28px;
+  box-shadow: 0px 20px 30px #56c5aa40;
+}
+
+.landing .pfp {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  top: 381px;
+  left: 279px;
+  object-fit: cover;
+}
+
+.landing .name {
+  position: absolute;
+  width: 59px;
+  top: 460px;
+  left: 263px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .username {
+  position: absolute;
+  width: 65px;
+  top: 470px;
+  left: 286px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 7px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .location {
+  position: absolute;
+  top: 481px;
+  left: 306px;
+  mix-blend-mode: darken;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .bio {
+  position: absolute;
+  width: 180px;
+  top: 494px;
+  left: 232px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+}
+
+.landing .contactdetails {
+  position: absolute;
+  width: 132px;
+  height: 169px;
+  top: 604px;
+  left: 186px;
+}
+
+.landing .email {
+  position: absolute;
+  width: 116px;
+  height: 33px;
+  top: 91px;
+  left: 8px;
+}
+
+.landing .overlap-group {
+  position: relative;
+  width: 120px;
+  height: 41px;
+  left: -4px;
+  background-image: url(./img/emailspace.svg);
+  background-size: 100% 100%;
+}
+
+.landing .emailplaceholder {
+  position: absolute;
+  width: 31px;
+  top: 4px;
+  left: 9px;
+  font-family: "JetBrains Mono", Helvetica;
+  font-weight: 400;
+  color: #555555;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .emailaddress {
+  position: absolute;
+  width: 107px;
+  height: 11px;
+  top: 17px;
+  left: 9px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .website {
+  position: absolute;
+  width: 116px;
+  height: 33px;
+  top: 131px;
+  left: 8px;
+}
+
+.landing .div {
+  position: relative;
+  width: 120px;
+  height: 38px;
+  top: 0;
+  left: -5px;
+  background-image: url(./img/websitespace.svg);
+  background-size: 100% 100%;
+}
+
+.landing .websiteplaceholder {
+  position: absolute;
+  width: 39px;
+  top: 6px;
+  left: 9px;
+  font-family: "JetBrains Mono", Helvetica;
+  font-weight: 400;
+  color: #555555;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing .websitedotcom {
+  position: absolute;
+  width: 100px;
+  height: 11px;
+  top: 19px;
+  left: 9px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .overlap-2 {
+  position: absolute;
+  width: 116px;
+  height: 56px;
+  top: 28px;
+  left: 7px;
+}
+
+.landing .phone {
+  position: absolute;
+  width: 116px;
+  height: 33px;
+  top: 23px;
+  left: 0;
+}
+
+.landing .overlap-3 {
+  position: relative;
+  width: 120px;
+  height: 41px;
+  left: -4px;
+  background-image: url(./img/phonenumberspace.svg);
+  background-size: 100% 100%;
+}
+
+.landing .phoneplaceholder {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  font-family: "JetBrains Mono", Helvetica;
+  font-weight: 400;
+  color: #555555;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing .phonenumber {
+  position: absolute;
+  height: 12px;
+  top: 16px;
+  left: 12px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .contact {
+  position: absolute;
+  width: 85px;
+  top: 0;
+  left: 1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing .gender {
+  position: absolute;
+  width: 52px;
+  height: 46px;
+  top: 560px;
+  left: 224px;
+}
+
+.landing .overlap-4 {
+  position: relative;
+  width: 56px;
+  height: 54px;
+  left: -4px;
+  background-image: url(./img/skillsspace-2.svg);
+  background-size: 100% 100%;
+}
+
+.landing .gendertext {
+  position: absolute;
+  width: 38px;
+  top: 27px;
+  left: 11px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #b7b7b7;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing .text-wrapper {
+  position: absolute;
+  width: 11px;
+  top: 4px;
+  left: 23px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .skills {
+  position: absolute;
+  width: 128px;
+  height: 115px;
+  top: 540px;
+  left: 326px;
+}
+
+.landing .overlap-5 {
+  position: relative;
+  width: 105px;
+  height: 141px;
+  top: 9px;
+  left: 15px;
+  background-image: url(./img/skillsspace-1.svg);
+  background-size: 100% 100%;
+}
+
+.landing .text-wrapper-2 {
+  position: absolute;
+  top: 76px;
+  width: 100%;
+  /* transform: translateX(17%); */
+  left: 15px;
+  font-family: "Abhaya Libre Medium-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  /* white-space: nowrap; */
+}
+
+.landing .divisionn {
+  position: absolute;
+  width: 79px;
+  height: 1px;
+  top: 69px;
+  left: 13px;
+  object-fit: cover;
+}
+
+.landing .NODEJS {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  /* transform: translateX(17%); */
+  left: 15px;
+  font-family: "Abhaya Libre Medium-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  /* white-space: nowrap; */
+}
+
+.landing .img {
+  position: absolute;
+  width: 79px;
+  height: 1px;
+  top: 43px;
+  left: 13px;
+  object-fit: cover;
+}
+
+.landing .text-wrapper-3 {
+  position: absolute;
+  top: 24px;
+  width: 100%;
+  /* transform: translateX(17%); */
+  left: 15px;
+  font-family: "Abhaya Libre Medium-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  /* white-space: nowrap; */
+}
+
+.landing .text-wrapper-4 {
+  position: absolute;
+  top: 4px;
+  left: 36px;
+  font-family: "Judson", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .interests {
+  position: absolute;
+  width: 128px;
+  height: 115px;
+  top: 658px;
+  left: 326px;
+}
+
+.landing .overlap-6 {
+  position: relative;
+  width: 105px;
+  height: 141px;
+  top: 9px;
+  left: 15px;
+  background-image: url(./img/skillsspace.svg);
+  background-size: 100% 100%;
+}
+
+.landing .text-wrapper-5 {
+  position: absolute;
+  top: 4px;
+  left: 27px;
+  font-family: "Judson", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing .border {
+  position: absolute;
+  width: 342px;
+  height: 461px;
+  top: 350px;
+  left: 147px;
+}
+
+.landing .overlap-7 {
+  position: relative;
+  height: 461px;
+}
+
+.landing .left {
+  position: absolute;
+  width: 1px;
+  height: 461px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.landing .right {
+  position: absolute;
+  width: 1px;
+  height: 461px;
+  top: 0;
+  left: 341px;
+  object-fit: cover;
+}
+
+.landing .top {
+  position: absolute;
+  width: 342px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.landing .bottom {
+  position: absolute;
+  width: 342px;
+  height: 1px;
+  top: 460px;
+  left: 0;
+  object-fit: cover;
+}
+.pfp {
+  border-radius: 100%;
+}
+
+
+.fa-xmark{
+  color: black;
+}

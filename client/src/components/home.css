@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #f7f3ff;
+    color:#682860;
+    font-family: Rosario, sans-serif;
+    /* background: hsla(293, 91%, 91%, 1);
+
+background: radial-gradient(circle, hsla(293, 91%, 91%, 1) 77%, hsla(0, 0%, 100%, 1) 85%, hsla(293, 93%, 68%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(293, 91%, 91%, 1) 77%, hsla(0, 0%, 100%, 1) 85%, hsla(293, 93%, 68%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(293, 91%, 91%, 1) 77%, hsla(0, 0%, 100%, 1) 85%, hsla(293, 93%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F8D2FD", endColorstr="#FFFFFF", GradientType=1 ); */
+background: hsla(293, 93%, 68%, 1);
+
+background: radial-gradient(circle, hsla(293, 93%, 68%, 1) 11%, hsla(67, 88%, 91%, 1) 80%, hsla(0, 0%, 100%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(293, 93%, 68%, 1) 11%, hsla(67, 88%, 91%, 1) 80%, hsla(0, 0%, 100%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(293, 93%, 68%, 1) 11%, hsla(67, 88%, 91%, 1) 80%, hsla(0, 0%, 100%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E763F9", endColorstr="#F7FCD2", GradientType=1 );
+
+  }
+  .heading{
+    font-family: 'Fuggles', cursive;
+  }
+  .moto{
+    font-family: 'Skranji', cursive;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .type-animation {
+    display: inline-flex;
+    width: 0;
+    overflow: hidden;
+    padding-right: 0.08em;
+    position: relative;
+  }
+  .type-animation:after {
+    content: "";
+    background: #f7f3ff;
+    position: absolute;
+    right: 0;
+    top: -0.05em;
+    bottom: -0.05em;
+    width: 0.08em;
+    border-right: 2px solid transparent;
+  }
+  .type-animation.animating {
+    animation: type 1620ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  .type-animation.animating:after {
+    animation: cursor 320ms 8.625 ease-in-out;
+  }
+  @keyframes cursor {
+    0%, 100% {
+      border-color: #f7f3ff;
+   }
+    50% {
+      border-color: #241b5b;
+   }
+    100% {
+      width: 0;
+   }
+  }
+  
+   
+  
+.blockchain{
+    position:absolute;
+    bottom:10%;
+    left: 10%;
+}
+.react{
+    position:absolute;
+    top:15%;
+    right: 20%;
+
+}
+.guitar{
+    position:absolute;
+    top:10%;
+    left: 5%;
+
+}
+.ai{
+    position:absolute;
+    bottom: 20%;
+    right: 10%;
+}
+.purplecoins{
+    position:absolute;
+    bottom: 10%;
+    right:40%;
+}
+
+
+.dance2{
+    position:absolute;
+    top:30%;
+    left: 30%;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .floating-image {
+    width: 100px;
+    height: 100px; 
+    position: absolute;
+    /* animation: float 10s infinite linear;  */
+    animation:spin 4s linear infinite;
+    background: var(--image-url) no-repeat center center;
+    background-size: cover;
+    /* opacity: 0.5; */
+  }
+
+  @keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}

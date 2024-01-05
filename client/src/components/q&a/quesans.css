@@ -1,0 +1,55 @@
+
+.question-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    
+  }
+  
+  .question-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #007bff;
+  }
+  
+  .qlabel {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .qinput
+ {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    color:black;
+  }
+  
+  .qbutton {
+    background-color: purple;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .qbutton:hover {
+    background-color: #0056b3;
+  }
+  
+  .qansinput{
+    border: 2px solid black;
+    color: black;
+  }
+  .qanda{
+    background-color: aquamarine;
+  }
+
+  .qabox{
+    border: 2px solid purple;
+    margin-bottom: 5px;
+  }
